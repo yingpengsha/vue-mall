@@ -36,4 +36,7 @@ const GoodsModel = sequelize.define('goods',{
 	timestamps:false,
 });
 
+// 反向生成数据库
+// sequelize.sync()
+
 module.exports = GoodsModel;

@@ -22,7 +22,7 @@ const MessageModel = sequelize.define('message',{
 	},
 	/*0未回复，1已回复*/
 	state:{
-		type:Sequelize.ENUM(0,1),
+		type:Sequelize.INTEGER,
 		defaultValue: 0,
 		allowNull:false
 	},
@@ -33,5 +33,8 @@ const MessageModel = sequelize.define('message',{
 },{
 	timestamps:false,
 });
+
+// 反向生成数据库
+// sequelize.sync()
 
 module.exports = MessageModel;

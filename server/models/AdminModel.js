@@ -25,4 +25,7 @@ const AdminModel = sequelize.define('admin',{
 	timestamps:false,
 });
 
+// 反向生成数据库
+// sequelize.sync()
+
 module.exports = AdminModel;

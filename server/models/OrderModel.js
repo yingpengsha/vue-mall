@@ -26,7 +26,7 @@ const OrderModel = sequelize.define('order',{
 	},
 	/*0未付款，1已付款未发货，2已发货未确认收到，3确认到货订单完成*/
 	state:{
-		type:Sequelize.ENUM(0,1,2,3),
+		type:Sequelize.INTEGER,
 		defaultValue: 0,
 		allowNull:false
 	},
@@ -41,5 +41,8 @@ const OrderModel = sequelize.define('order',{
 },{
 	timestamps:false,
 });
+
+// 反向生成数据库
+// sequelize.sync()
 
 module.exports = OrderModel;

@@ -16,4 +16,7 @@ const TypeModel = sequelize.define('type',{
 	timestamps:false,
 });
 
+// 反向生成数据库
+// sequelize.sync()
+
 module.exports = TypeModel;

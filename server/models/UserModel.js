@@ -24,7 +24,7 @@ const UserModel = sequelize.define('user',{
 	},
 	/*0保密，1男，2女*/
 	sex:{
-		type:Sequelize.ENUM(0,1,2),
+		type:Sequelize.INTEGER,
 		defaultValue: 0,
 		allowNull:false
 	},
@@ -56,5 +56,8 @@ const UserModel = sequelize.define('user',{
 },{
 	timestamps:false,
 });
+
+// 反向生成数据库
+// sequelize.sync()
 
 module.exports = UserModel;

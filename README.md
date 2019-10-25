@@ -1,53 +1,34 @@
 # vue-MoreMall
-一个基于vue全家桶的pc端综合性网上购物商城，包括前台商城和后台管理系统，请求数据采用axios，后端采用koa2，数据库采用mysql。
 
-## 已完成功能
+## Setup
 
-1. 登录注册；
-2. 商品分类；
-3. 购买商品；
-4. 搜索商品；
-5. 购物车；
-6. 订单管理；
-7. 商品问答；
-8. 商品评价；
-9. 修改资料；
-10. 后台管理；
+```bash
+# 后端
+cd server && npm i # yarn
+# 前端
+cd client && npm i # yarn
+```
 
-## 项目截图
+## Generate database
 
-首页
+1. `server/config/sequelizeBase` 配置数据库
+2. 现在数据库创建 `mall` 数据库
+3. 将 `server/models/` 下所有文件中的注释去掉
+4. 接下来 `run server`
 
-![](screen/index.gif)
+```bash
+cd server && npm run start # yarn start
+```
 
-商品分类页
+生成后记得注释回去
 
-![](screen/type.gif)
+## Run
 
-搜索页
-
-![](screen/search.gif)
-
-商品详情页
-
-![](screen/goodsDetail.gif)
-
-登录页
-
-![](screen/login.gif)
-
-购物车页
-
-![](screen/cart.gif)
-
-订单页
-
-![](screen/orders.gif)
-
-个人资料页
-
-![](screen/data.gif)
-
-后台管理页
-
-![](screen/manage.gif)
+```bash
+# 后端
+cd server && npm run start # yarn start
+# 前端 - web
+cd client && npm run dev # yarn dev
+# 前端 - admin
+cd client && npm run dev:admin # yarn dev:admin
+```
