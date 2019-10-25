@@ -11,10 +11,11 @@ cd client && npm i # yarn
 
 ## Generate database
 
-1. `server/config/sequelizeBase` 配置数据库
-2. 现在数据库创建 `mall` 数据库
-3. 将 `server/models/` 下所有文件中的注释去掉
-4. 接下来 `run server`
+1. 开启 MySQL
+2. `server/config/sequelizeBase` 配置数据库
+3. 现在数据库创建 `mall` 数据库
+4. 将 `server/models/` 下所有文件中的注释去掉
+5. 接下来 `run server`
 
 ```bash
 cd server && npm run start # yarn start
