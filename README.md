@@ -1,5 +1,9 @@
 # vue-MoreMall
 
+## Notice
+
+**项目不提供数据，请运行后自行到后台录入**
+
 ## Setup
 
 ```bash
